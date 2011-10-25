@@ -33,7 +33,7 @@ def Co(number)
      puts "new length: #{keepers.uniq.length}"
   end
 
-  return keepers.uniq.inject { |sum, el| sum + el }
+  return keepers.uniq.inject(0) { |sum, el| sum + el }
 end
 
 puts "Found: #{Co(200000)}"
