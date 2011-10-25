@@ -3,8 +3,6 @@
 require "prime"
 
 total = 0
-Prime.each(2000000) do |num|
-  total += num
-end
+Prime.each(2000000) { |num| total += num }
 
 puts total
