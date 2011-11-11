@@ -1,0 +1,1 @@
+puts (1..1000).inject { |tot, el| tot = tot + el**el }.to_s.split("").pop(10).join
